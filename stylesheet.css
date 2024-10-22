@@ -1,0 +1,234 @@
+/* Define o modelo de box para todos os elementos, incluindo padding e margin */
+* {
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura e altura */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margin padrão */
+}
+
+/* Estilo para a fonte personalizada "Spicy Rice" */
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif; /* Define a fonte "Spicy Rice" */
+    font-weight: 400; /* Peso da fonte normal */
+    font-style: normal; /* Estilo normal */
+}
+
+/* Estilo do título principal dentro do contêiner */
+.conteiner h1 {
+    font-family: "Spicy Rice"; /* Define a fonte para o título */
+    font-size: 50px; /* Tamanho da fonte */
+}
+
+/* Estilo para títulos no cabeçalho e na seção */
+header h1, section h2 {
+    font-weight: normal; /* Define o peso da fonte como normal */
+}
+
+/* Define o contêiner principal com largura máxima */
+.conteiner {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Estilo do cabeçalho */
+body > header {
+    background-color: turquoise; /* Cor de fundo do cabeçalho */
+    color: black; /* Cor do texto */
+    display: flex; /* Usa flexbox para layout */
+}
+
+/* Estilo do contêiner dentro do cabeçalho */
+header .conteiner {
+    display: flex; /* Usa flexbox para layout */
+    bottom: 0px; /* Alinha o conteúdo na parte inferior */
+    align-items: center; /* Alinha itens no centro verticalmente */
+    justify-content: space-between; /* Espaça os itens ao longo da linha */
+}
+
+/* Estilo para os itens da lista no cabeçalho */
+header li {
+    display: inline; /* Exibe os itens em linha */
+    margin-right: 10px; /* Espaçamento entre os itens */
+}
+
+/* Estilo dos links no cabeçalho */
+header li a {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: black; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+}
+
+/* Estilo para links ao passar o mouse */
+header li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para o contêiner do logo e nome */
+#logoenome {
+    display: inline-flex; /* Exibe os elementos em linha */
+}
+
+/* Estilo da logo */
+.logodavezo {
+    height: 75px; /* Altura da logo */
+    order: -1; /* Coloca a logo antes do texto */
+}
+
+/* Estilo para imagem ilustrativa */
+.imgL { 
+    margin-left: 100px; /* Espaçamento à esquerda */
+}
+
+/* Estilo do título da seção sobre a loja */
+#infovazogames h2 {
+    font-size: 35px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do subtítulo da seção sobre a loja */
+#infovazogames h3 {
+    font-size: 20px; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo para parágrafos na seção sobre a loja */
+#infovazogames p {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+}
+
+/* Estilo dos logos das plataformas */
+#logos img { 
+    position: relative; /* Posicionamento relativo */
+    left: 450px; /* Ajuste da posição à esquerda */
+    display: inline; /* Exibe em linha */
+    padding: 5px 5px; /* Espaçamento interno */
+}
+
+/* Estilo para imagens dentro do contêiner de logos */
+#logos img {
+    width: 70px; /* Largura da imagem */
+    height: 70px; /* Altura da imagem */
+    object-fit: contain; /* Ajusta a imagem sem distorcer */
+    margin-right: 5px; /* Espaçamento à direita */
+}
+
+/* Estilo para links de logos */
+#logos a { 
+    display: inline-flex; /* Exibe os elementos em linha */
+    align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: turquoise; /* Cor de fundo do rodapé */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do contêiner principal */
+.conteiner {
+    width: 1366px; /* Largura fixa do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Estilo do formulário de contato */
+#formulario form {
+    width: 300px; /* Largura do formulário */
+    margin-bottom: 30px; /* Espaçamento inferior */
+    background-color: #08f1f1; /* Cor de fundo do formulário */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para rótulos dentro do formulário */
+#formulario label {
+    display: block; /* Exibe rótulos como blocos */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo dos inputs, textarea e botões no formulário */
+#formulario input, textarea, button {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #08e5f5; /* Borda do input */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+#formulario input:focus, textarea{
+    background-color: rgb(245, 240, 240);
+    outline-color: #08e5f5;
+}
+#formulario textarea {
+    resize: none;
+    height: 180px;
+}
+
+/* Estilo dos botões do formulário */
+#formulario button {
+    background-color: #0a06f3; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+
+}
+
+#formulario button:hover {
+background-color: #3c39ee;
+}
+
+#formulario h3 {
+    font-size: 30px;
+}
+
+/* Estilo para ícones de redes sociais */
+.nosAcompanhe img {
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    object-fit: contain; /* Ajusta a imagem sem distorcer */
+    margin-right: 5px; /* Espaçamento à direita */
+}
+
+/* Estilo do título "Nos acompanhe" */
+.nosAcompanhe .acompanhe {
+    margin-left: 300px; /* Espaçamento à esquerda */
+    margin-right: 300px; /* Espaçamento à direita */
+    display: inline; /* Exibe em linha */
+}
+
+/* Estilo do contêiner de ícones de contato */
+.nosAcompanhe .iconcontato {
+    margin-left: 300px; /* Espaçamento à esquerda */
+    margin-right: 300px; /* Espaçamento à direita */
+    display: inline-flex; /* Exibe em linha */
+}
+
+/* Estilo do artigo de contato */
+section .FCE {
+    display: flex; /* Usa flexbox para layout */
+}
+
+/* Estilo do contêiner de endereço */
+.endereço { 
+    display: inline-block; /* Exibe em linha */
+}
+.endereço p { text-align: start;
+width: 1000px;
+
+
+}
+
+/* Estilo do título "Fale conosco" */
+#contato .fconosco {
+    padding: 10px 10px; /* Espaçamento interno */
+    font-size: 40px; /* Tamanho da fonte */
+}
+
+/* Estilo da imagem do WhatsApp */
+#whatsapp img { 
+    display: flex; /* Exibe como flex */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    object-fit: contain; /* Ajusta a imagem sem distorcer */
+    position: fixed; /* Posição fixa na tela */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+}
+
